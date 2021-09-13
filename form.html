@@ -9,21 +9,21 @@
     <!-- font -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-       <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/css/bootstrap-grid.min.css"> -->
-    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/css/bootstrap-grid.min.css"> -->
 
-       <script src="./js/index.js" defer></script>
-       <script src="./js/modal.js" defer></script>
+
+    <script src="./js/index.js" defer></script>
+    <script src="./js/modal.js" defer></script>
     <title>Fetch Api</title>
 </head>
 
 <body>
-<!-- Navbar bu kısmı s ile yaptım  -->
+    <!-- Navbar bu kısmı s ile yaptım  -->
     <div class="api"> </div>
     <!-- /Navbar -->
 
-<!-- SİDEBAR  -->
-    <div class="container" >
+    <!-- SİDEBAR  -->
+    <div class="container">
         <div class="sidebar col-md-4">
             <a href="/form.html">Form</a>
             <a href="/card-fetch-api.html">Card List</a>
@@ -32,83 +32,83 @@
 
         <!-- Main Section -->
         <div class="col-md-8">
-          <div class="content"> 
-            <form class="content-items" action="/" method="POST">
-            <div class="form-group">
-              <label for="company">Company</label>
-              <input id="company" type="text" name="Company" placeholder="*" />
-            </div>
-            <div class="form-group">
-              <label for="firstname">Company</label>
-              <input id="firstname" type="text" name="First Name" placeholder="*" />
-            </div>
-            <div class="form-group">
-              <label for="lastname">Company</label>
-              <input id="lastname" type="text" name="Last Name" placeholder="*" />
-            </div>
-            <div class="form-group">
-              <label for="email"> Email  </label>
-              <input id="email" type="email" name="Email" placeholder="*" />
+            <div class="content">
+                <form class="content-items" action="/" method="POST">
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input id="company" type="text" name="Company" placeholder="*" />
+                    </div>
+                    <div class="form-group">
+                        <label for="firstname">Company</label>
+                        <input id="firstname" type="text" name="First Name" placeholder="*" />
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Company</label>
+                        <input id="lastname" type="text" name="Last Name" placeholder="*" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email"> Email </label>
+                        <input id="email" type="email" name="Email" placeholder="*" />
 
-            </div>
-            <div class="form-group">
-              <label for="company">Company</label>
-              <input type="text" name="Title" placeholder="*" />
-            </div>
-            <div class="form-group">
-              <label for="company">Company</label>
-              <input type="text" name="Phone" placeholder="*" />
-            </div>
-            
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" name="Title" placeholder="*" />
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" name="Phone" placeholder="*" />
+                    </div>
 
-            <div class="radio-menu">
-                <div class="radio-title">Job Functions:</div>
-                <div class="radio-menu-items">
-                  <div class="radio-menu-item">
-                    <input type="radio" name="Job Function" value="deneme1" />
-                    <span> Lorem, ipsum dolor. </span>
-                  </div>
-                  <div class="radio-menu-item">
-                    <input type="radio" name="Job Function" value="deneme2" />
-                    <span> Lorem, ipsum dolor. </span>
-                  </div>
-                  <div class="radio-menu-item">
-                    <input type="radio" name="Job Function" value="deneme3" />
-                    <span> Lorem, ipsum dolor. </span>
-                  </div>
-                  <div class="radio-menu-item">
-                    <input type="radio" name="Job Function" value="deneme4" />
-                    <span> Lorem, ipsum dolor. </span>
-                  </div>
-                  <div class="radio-menu-item">
-                    <input type="radio" name="Job Function" value="deneme5" />
-                    <span> Lorem, ipsum dolor.</span>
-                  </div>
-                </div>
-              </div>
-              <textarea
-                type="text"
-                name="Your message:"
-                placeholder="Your message...."
-              ></textarea>
-              
 
-                
-            </form>
-            <button id="alertButton" class="form-button" type="submit" onkeyup="alertFunc()">Gönder</button>
-        </div>
+                    <div class="radio-menu">
+                        <div class="radio-title">Job Functions:</div>
+                        <div class="radio-menu-items">
+                            <div class="radio-menu-item">
+                                <input type="radio" name="Job Function" value="deneme1" />
+                                <span> Lorem, ipsum dolor. </span>
+                            </div>
+                            <div class="radio-menu-item">
+                                <input type="radio" name="Job Function" value="deneme2" />
+                                <span> Lorem, ipsum dolor. </span>
+                            </div>
+                            <div class="radio-menu-item">
+                                <input type="radio" name="Job Function" value="deneme3" />
+                                <span> Lorem, ipsum dolor. </span>
+                            </div>
+                            <div class="radio-menu-item">
+                                <input type="radio" name="Job Function" value="deneme4" />
+                                <span> Lorem, ipsum dolor. </span>
+                            </div>
+                            <div class="radio-menu-item">
+                                <input type="radio" name="Job Function" value="deneme5" />
+                                <span> Lorem, ipsum dolor.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <textarea type="text" name="Your message:" placeholder="Your message...."></textarea>
+
+
+
+                </form>
+                <button id="alertButton" class="form-button" type="submit" onclick="alertFunc()">Gönder</button>
+            </div>
         </div>
 
-        
+
 
         <!-- /Main Section -->
     </div>
 
-    <div class="modal" id="alert">
-      <div id="alertText">
+    <div class="overlay">
 
+      <div id="alert" class="modal">
+        <button onclick="closeAlert()">Kapat</button>
       </div>
+
     </div>
+
+    
 
 
 </body>

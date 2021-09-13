@@ -232,8 +232,37 @@ header .profil img {
   display: none;
   height: 412px;
   width: 620px;
-  background: teal;
+  background: #a1caca;
   top: 25%;
   left: 25%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  z-index: 1000;
+}
+
+.modal button {
+  margin: 1rem;
+  background-color: cornflowerblue;
+  width: 7rem;
+  height: 3rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.overlay {
+  display: none;
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
 }
 /*# sourceMappingURL=style.css.map */
