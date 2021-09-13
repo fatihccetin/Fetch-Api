@@ -43,7 +43,7 @@ img {
 }
 
 header {
-    border-bottom: 1px solid $primary-color;
+    border-bottom: 1px solid $red-color;
 
     .container {
         padding-top: 1rem;
@@ -52,9 +52,14 @@ header {
     .logo {
         width: 15%;
         img {
+            border-radius: 1rem;
             width: 100%;
             max-width: 10rem;
-        }
+            -webkit-border-radius: 1rem;
+            -moz-border-radius: 1rem;
+            -ms-border-radius: 1rem;
+            -o-border-radius: 1rem;
+}
     }
     .profil {
         width: 15%;
@@ -66,6 +71,51 @@ header {
             -moz-border-radius: 5rem;
             -ms-border-radius: 5rem;
             -o-border-radius: 5rem;
-}
+        }
     }
+}
+
+// Sidebar
+.container{
+    @include flex-display(flex, center, space-between);
+    
+
+.sidebar {
+    width: 20%;
+    height: 60rem;
+    border-radius: 5px;
+   background-color: $gray-color;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    padding-top: 2rem;
+
+    a{
+        display: block;
+        font-size: 2rem;
+        margin: 5px;
+        padding: 1rem;
+        background-color: burlywood;
+        border-radius:1rem;
+        -webkit-border-radius:1rem;
+        -moz-border-radius:1rem;
+        -ms-border-radius:1rem;
+        -o-border-radius:1rem;
+        -webkit-border-radius:5px;
+}
+   
+}
+    
+
+.content{
+    border-radius: 5px;
+    background-color: antiquewhite;
+    margin-top: 2rem;
+    width: 80%;
+    height: 60rem;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
 }

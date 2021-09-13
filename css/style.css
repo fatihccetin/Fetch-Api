@@ -2,19 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Open+Sans:wght@300&display=swap");
 /* variable*/
 .bg-dark {
-  background-color: #14151A;
+  background-color: #E51515;
 }
 
 .bg-light {
-  background-color: #fefefe;
+  background-color: #beb8b8;
 }
 
 .bg-dark {
-  background-color: #14151A;
+  background-color: #E51515;
 }
 
 .bg-light {
-  background-color: #fefefe;
+  background-color: #beb8b8;
 }
 
 /* reset css */
@@ -34,7 +34,7 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   color: #9F9F9F;
-  background-color: #fefefe;
+  background-color: #beb8b8;
 }
 
 .container {
@@ -47,7 +47,7 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Changa", sans-serif;
-  color: #fefefe;
+  color: #beb8b8;
 }
 
 ul {
@@ -80,8 +80,13 @@ header .logo {
 }
 
 header .logo img {
+  border-radius: 1rem;
   width: 100%;
   max-width: 10rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 
 header .profil {
@@ -96,5 +101,53 @@ header .profil img {
   -moz-border-radius: 5rem;
   -ms-border-radius: 5rem;
   -o-border-radius: 5rem;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .sidebar {
+  width: 20%;
+  height: 60rem;
+  border-radius: 5px;
+  background-color: #9F9F9F;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  padding-top: 2rem;
+}
+
+.container .sidebar a {
+  display: block;
+  font-size: 2rem;
+  margin: 5px;
+  padding: 1rem;
+  background-color: burlywood;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  -webkit-border-radius: 5px;
+}
+
+.container .content {
+  border-radius: 5px;
+  background-color: antiquewhite;
+  margin-top: 2rem;
+  width: 80%;
+  height: 60rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 /*# sourceMappingURL=style.css.map */
