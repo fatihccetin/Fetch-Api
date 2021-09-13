@@ -1,3 +1,22 @@
+/* fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Open+Sans:wght@300&display=swap");
+/* variable*/
+.bg-dark {
+  background-color: #14151A;
+}
+
+.bg-light {
+  background-color: #fefefe;
+}
+
+.bg-dark {
+  background-color: #14151A;
+}
+
+.bg-light {
+  background-color: #fefefe;
+}
+
 /* reset css */
 *,
 *::after,
@@ -37,5 +56,45 @@ ul {
 
 img {
   width: 100%;
+}
+
+header {
+  border-bottom: 1px solid #E51515;
+}
+
+header .container {
+  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .logo {
+  width: 15%;
+}
+
+header .logo img {
+  width: 100%;
+  max-width: 10rem;
+}
+
+header .profil {
+  width: 15%;
+}
+
+header .profil img {
+  width: 100%;
+  max-width: 10rem;
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
 }
 /*# sourceMappingURL=style.css.map */

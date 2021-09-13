@@ -1,5 +1,3 @@
-@import "abstracts";
-@import "components";
 
 /* fonts*/ 
 
@@ -19,7 +17,7 @@ $gray-color:#9F9F9F;
 $light-color:#fefefe;
 
 
-@mixin display-flex($display, $align-items, $justify-content) {
+@mixin flex-display($display, $align-items, $justify-content) {
     display: $display;
     align-items: $align-items;
     justify-content: $justify-content;

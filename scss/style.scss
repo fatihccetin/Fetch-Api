@@ -1,8 +1,6 @@
 @import "abstracts";
 @import "components";
 
-
-
 /* reset css */
 
 *,
@@ -42,4 +40,32 @@ ul {
 
 img {
     width: 100%;
+}
+
+header {
+    border-bottom: 1px solid $primary-color;
+
+    .container {
+        padding-top: 1rem;
+        @include flex-display(flex, center, space-between);
+    }
+    .logo {
+        width: 15%;
+        img {
+            width: 100%;
+            max-width: 10rem;
+        }
+    }
+    .profil {
+        width: 15%;
+        img {
+            width: 100%;
+            max-width: 10rem;
+            border-radius: 5rem;
+            -webkit-border-radius: 5rem;
+            -moz-border-radius: 5rem;
+            -ms-border-radius: 5rem;
+            -o-border-radius: 5rem;
+}
+    }
 }

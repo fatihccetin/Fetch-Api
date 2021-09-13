@@ -1,22 +1,19 @@
 const appContainer = document.querySelector(".api"); //html general codes
 
-appContainer.innerHTML = ` <header class="main-header ">
+appContainer.innerHTML = ` <header>
 
-<!-- Top header -->
+<!--  header -->
 
     <div class="container">
         <div class="logo">
-        <a href="/"><img alt="logo" src="./img/logo.jPEG" /> </a>
+        <a href="/"><img alt="logo" src="./img/logo.jpg" /> </a>
         </div>
 
         
-        <div class="search">
         
-        </div>
 
-        <div class="login-area">
-            <a href="#" class="btn btn-primary">Login <span><i class="fas fa-sign-in-alt"></i></span></a>
-            <a href="#" class="btn btn-primary ml-2">Sign Up <span><i class="fas fa-user-plus"></i></span></a>
+        <div class="profil">
+        <a href="https://github.com/fatihccetin" target="_blank"><img alt="logo" src="./img/profil.jpg" /> </a>
         </div>
     </div>
 
