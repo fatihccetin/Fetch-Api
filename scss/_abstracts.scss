@@ -8,13 +8,14 @@
 $primary-font: 'Changa', sans-serif;
 $secondary-font:'Open Sans', sans-serif;
 
-$primary-color:#E51515;
-$secondary-color: #14151A;
+$red-color:#E51515;
+$black-color: #14151A;
 
-$date-color:#FFB320;
-$comment-color:#08ABBD;
+
+
+
 $gray-color:#9F9F9F;
-$light-color:#fefefe;
+$light-color:#beb8b8;
 
 
 @mixin flex-display($display, $align-items, $justify-content) {
@@ -23,9 +24,12 @@ $light-color:#fefefe;
     justify-content: $justify-content;
   }
 
+  
+
+
 .bg{
     &-dark{
-        background-color:$secondary-color;
+        background-color:$red-color;
     }
     &-light{
         background-color: $light-color;
