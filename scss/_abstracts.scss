@@ -18,6 +18,13 @@ $comment-color:#08ABBD;
 $gray-color:#9F9F9F;
 $light-color:#fefefe;
 
+
+@mixin display-flex($display, $align-items, $justify-content) {
+    display: $display;
+    align-items: $align-items;
+    justify-content: $justify-content;
+  }
+
 .bg{
     &-dark{
         background-color:$secondary-color;
