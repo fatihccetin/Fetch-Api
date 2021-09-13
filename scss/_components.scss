@@ -1,0 +1,8 @@
+.bg{
+    &-dark{
+        background-color:$secondary-color;
+    }
+    &-light{
+        background-color: $light-color;
+    }
+}
