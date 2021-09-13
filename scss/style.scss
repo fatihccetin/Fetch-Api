@@ -1,0 +1,43 @@
+// @import "abstracts";
+// @import "components";
+
+/* reset css */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: $secondary-font;
+    color: $gray-color;
+    background-color: $light-color;
+}
+
+.container {
+    max-width: 114rem;
+    margin: 0 auto; // boşlukları ayarlar
+    width: 100%; // sayfayı 1140 px gore ortalıcak yanı kösede bosluk olur
+}
+
+a {
+    text-decoration: none; // linklerin altı cızılı olmaz
+    text-transform: uppercase; //linklerin hepsi buyuk harf
+    font-family: $primary-font;
+    color: $light-color;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
