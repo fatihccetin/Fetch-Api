@@ -223,7 +223,7 @@ header .profil img {
 }
 
 .container .content .form-button:hover {
-  background-color: rgba(204, 130, 130, 0.7);
+  background-color: royalblue;
   color: white;
 }
 
@@ -232,7 +232,7 @@ header .profil img {
   display: none;
   height: 412px;
   width: 620px;
-  background: #a1caca;
+  background: rgba(161, 202, 202, 0.5);
   top: 25%;
   left: 25%;
   border-radius: 20px;
@@ -243,9 +243,9 @@ header .profil img {
   z-index: 1000;
 }
 
-.modal button {
+.modal .modal-btn {
   margin: 1rem;
-  background-color: cornflowerblue;
+  background-color: rgba(187, 157, 157, 0.7);
   width: 7rem;
   height: 3rem;
   border-radius: 5px;
@@ -253,6 +253,29 @@ header .profil img {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+  border: 2px solid royalblue;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.modal .modal-btn:hover {
+  background: royalblue;
+  color: white;
+}
+
+.modal .modal-content {
+  font-size: 3rem;
+  color: black;
+}
+
+.modal .modal-content .yeterulen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin: 0 1rem;
 }
 
 .overlay {
@@ -262,7 +285,7 @@ header .profil img {
   position: fixed;
   height: 100vh;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   z-index: 100;
 }
 /*# sourceMappingURL=style.css.map */

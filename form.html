@@ -33,34 +33,32 @@
         <!-- Main Section -->
         <div class="col-md-8">
             <div class="content">
-                <form class="content-items" action="/" method="POST">
+                <form class="content-items">
                     <div class="form-group">
                         <label for="company">Company</label>
-                        <input id="company" type="text" name="Company" placeholder="*" />
+                        <input id="company" type="text" name="Company" placeholder="*" required/>
                     </div>
                     <div class="form-group">
-                        <label for="firstname">Company</label>
-                        <input id="firstname" type="text" name="First Name" placeholder="*" />
+                        <label for="firstname">First Name</label>
+                        <input id="firstname" type="text" name="First Name" placeholder="*" required/>
                     </div>
                     <div class="form-group">
-                        <label for="lastname">Company</label>
-                        <input id="lastname" type="text" name="Last Name" placeholder="*" />
+                        <label for="lastname">Last Name</label>
+                        <input id="lastname" type="text" name="Last Name" placeholder="*" required />
                     </div>
                     <div class="form-group">
                         <label for="email"> Email </label>
-                        <input id="email" type="email" name="Email" placeholder="*" />
+                        <input id="email" type="email" name="Email" placeholder="*" required />
 
                     </div>
                     <div class="form-group">
-                        <label for="company">Company</label>
-                        <input type="text" name="Title" placeholder="*" />
+                        <label for="company">Title</label>
+                        <input type="text" id="title" name="Title" placeholder="*" required/>
                     </div>
                     <div class="form-group">
-                        <label for="company">Company</label>
-                        <input type="text" name="Phone" placeholder="*" />
+                        <label for="company">Phone</label>
+                        <input type="text" id="phone" name="Phone" placeholder="*" required/>
                     </div>
-
-
                     <div class="radio-menu">
                         <div class="radio-title">Job Functions:</div>
                         <div class="radio-menu-items">
@@ -86,12 +84,10 @@
                             </div>
                         </div>
                     </div>
-                    <textarea type="text" name="Your message:" placeholder="Your message...."></textarea>
-
-
-
+                    <textarea type="text" name="Your message:" placeholder="Your message...." ></textarea>
+                    <button type="button" id="alertButton" class="form-button" onclick="getPost()">Gönder</button>
                 </form>
-                <button id="alertButton" class="form-button" type="submit" onclick="alertFunc()">Gönder</button>
+                
             </div>
         </div>
 
@@ -103,7 +99,29 @@
     <div class="overlay">
 
       <div id="alert" class="modal">
-        <button onclick="closeAlert()">Kapat</button>
+        <button onclick="closeAlert()" class="modal-btn">&#x2715</button>
+
+        <div class="modal-content">
+        <!-- 
+            <span class="yeterulen">Company: <label for=""class="label-company"></label></span>
+            <span class="yeterulen">Firstname: <label for=""class="label-firstname"></label></span>
+            <span class="yeterulen">Lastname: <label for=""class="label-lastname"></label></span>
+            <span class="yeterulen">Email: <label for=""class="label-email"></label></span>
+            <span class="yeterulen">Title: <label for=""class="label-title"></label></span>
+            <span class="yeterulen">Phone: <label for=""class="label-phone"></label></span> -->
+
+            <ul class="yeterulenler">
+                <li class="yeterulen">Company: <label for=""class="label-company"></label></li>
+                <li class="yeterulen">Firstname: <label for=""class="label-firstname"></label></li>
+                <li class="yeterulen">Lastname: <label for=""class="label-lastname"></label></li>
+                <li class="yeterulen">Email: <label for=""class="label-email"></label></li>
+                <li class="yeterulen">Title: <label for=""class="label-title"></label></li>
+                <li class="yeterulen">Phone: <label for=""class="label-phone"></label></li>
+            </ul>
+            
+            
+
+        </div>
       </div>
 
     </div>
