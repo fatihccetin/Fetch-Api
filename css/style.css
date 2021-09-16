@@ -345,4 +345,24 @@ header .profil img {
   border-radius: 10px;
   height: 2em;
 }
+
+.search-area input[type="search"],
+.search-area button[type="submit"] {
+  border: none;
+  color: #beb8b8;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.search-area input[type="search"] {
+  border-bottom: 1px solid #E51515;
+  padding: 0.5rem;
+}
+
+.search-area button[type="submit"] {
+  margin-left: -2rem;
+}
 /*# sourceMappingURL=style.css.map */

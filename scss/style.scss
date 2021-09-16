@@ -291,14 +291,20 @@ header {
     input[type="search"],
     button[type="submit"] {
         border: none;
-        background-color: transparent;
+        //background-color: transparent;
         color: $light-color;
-    }
+        
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
     input[type="search"] {
-        border-bottom: 1px solid $primary-color;
+        border-bottom: 1px solid $red-color;
         padding: 0.5rem;
     }
     button[type="submit"] {
-        margin-left: -5rem;
+        margin-left: -2rem;
     }
 }
