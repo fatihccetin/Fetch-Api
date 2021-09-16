@@ -84,9 +84,11 @@ header {
 .container {
     @include flex-display(flex, center, center);
 
+    margin-bottom: 20px;
+
     .sidebar {
         width: 20%;
-        height: 80vh;
+        height: 90vh;
         border-radius: 5px;
         background-color: $gray-color;
         margin-top: 2rem;
@@ -108,13 +110,13 @@ header {
             }
         }
     }
-// Sectionn
+    // Sectionn
     .content {
         border-radius: 5px;
         background-color: antiquewhite;
         margin-top: 2rem;
         width: 100vh;
-        height: 80vh;
+        height: 90vh;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         -ms-border-radius: 5px;
@@ -174,9 +176,8 @@ header {
             transition: all 0.5s;
 
             &:hover {
-                background-color:royalblue;
+                background-color: royalblue;
                 color: white;
-                
             }
         }
     }
@@ -196,7 +197,7 @@ header {
     -o-border-radius: 20px;
     z-index: 1000;
 
-    .modal-btn{
+    .modal-btn {
         margin: 1rem;
         background-color: rgba($color: #bb9d9d, $alpha: 0.7);
         width: 7rem;
@@ -206,33 +207,25 @@ header {
         -moz-border-radius: 5px;
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
-        border:2px solid royalblue;
+        border: 2px solid royalblue;
         transition: 0.5s ease;
-        
-        &:hover{
+
+        &:hover {
             background: royalblue;
             color: white;
         }
-
-
     }
 
-    .modal-content{
+    .modal-content {
         font-size: 3rem;
-        color:black;
+        color: black;
 
-        
-        .yeterulen{
-            display:flex;
+        .yeterulen {
+            display: flex;
             justify-content: start;
             margin: 0 1rem;
         }
-
-       
     }
-   
-
-   
 }
 .overlay {
     display: none;
@@ -245,6 +238,67 @@ header {
     z-index: 100;
 }
 
-
 // grid  and section
 
+.grid-container {
+    border-radius: 5px;
+    background-color: antiquewhite;
+    margin-top: 2rem;
+    width: 100vh;
+    height: 90vh;
+
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 25vh 25vh 25vh;
+    grid-gap: 20px 20px;
+   
+
+    .container-item {
+        display: grid;
+        position: relative;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: 5px;
+        grid-template-rows: 25% 20% 40% ;
+        img {
+            justify-self: center;
+            width: 5rem;
+        }
+        .title {
+            padding: 1em 1em;
+            text-align: center;
+            font-weight: bold;
+            overflow: hidden;
+            text-transform: uppercase;
+        }
+        .data {
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            &::first-letter {
+                text-transform: uppercase;
+            }
+        }
+        .btn-k {
+            border-radius: 10px;
+            height: 2em;
+        }
+    }
+}
+
+.search-area {
+    input[type="search"],
+    button[type="submit"] {
+        border: none;
+        background-color: transparent;
+        color: $light-color;
+    }
+    input[type="search"] {
+        border-bottom: 1px solid $primary-color;
+        padding: 0.5rem;
+    }
+    button[type="submit"] {
+        margin-left: -5rem;
+    }
+}
