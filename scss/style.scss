@@ -88,7 +88,7 @@ header {
 
     .sidebar {
         width: 20%;
-        height: 90vh;
+        height: 110vh;
         border-radius: 5px;
         background-color: $gray-color;
         margin-top: 2rem;
@@ -116,7 +116,7 @@ header {
         background-color: antiquewhite;
         margin-top: 2rem;
         width: 100vh;
-        height: 90vh;
+        height: 110vh;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         -ms-border-radius: 5px;
@@ -245,12 +245,12 @@ header {
     background-color: antiquewhite;
     margin-top: 2rem;
     width: 100vh;
-    height: 90vh;
-
+    height: 110vh;
     display: grid;
+    
     padding: 20px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 25vh 25vh 25vh;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 30vh 30vh 25vh;
     grid-gap: 20px 20px;
 
     .container-item {
@@ -259,10 +259,11 @@ header {
         border: 1px solid black;
         border-radius: 10px;
         margin: 5px;
-        grid-template-rows: 25% 20% 40%;
+        grid-template-rows: 15% 30% 40%;
         img {
             justify-self: center;
             width: 5rem;
+            
         }
         div {
             position: relative;
@@ -285,10 +286,24 @@ header {
             }
         }
         .btn-k {
-            position:absolute;  
+            background-color: chocolate;
+            border: 2px dashed royalblue;
+            position:absolute;
             bottom: 0;
+            left: 50%;
+            width: 10rem;
+            transform:translate(-50%);
             border-radius: 10px;
-            height: 2em;
+            height: 2rem;
+            -webkit-transform:translate(-50%);
+            -moz-transform:translate(-50%);
+            -ms-transform:translate(-50%);
+            -o-transform:translate(-50%);
+            transition: 0.5s ease;
+            &:hover {
+                background: royalblue;
+                color: white;
+            }
         }
     }
 }

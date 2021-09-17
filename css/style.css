@@ -124,7 +124,7 @@ header .profil img {
 
 .container .sidebar {
   width: 20%;
-  height: 90vh;
+  height: 110vh;
   border-radius: 5px;
   background-color: #9F9F9F;
   margin-top: 2rem;
@@ -154,7 +154,7 @@ header .profil img {
   background-color: antiquewhite;
   margin-top: 2rem;
   width: 100vh;
-  height: 90vh;
+  height: 110vh;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -295,14 +295,14 @@ header .profil img {
   background-color: antiquewhite;
   margin-top: 2rem;
   width: 100vh;
-  height: 90vh;
+  height: 110vh;
   display: -ms-grid;
   display: grid;
   padding: 20px;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 25vh 25vh 25vh;
-      grid-template-rows: 25vh 25vh 25vh;
+  -ms-grid-rows: 30vh 30vh 25vh;
+      grid-template-rows: 30vh 30vh 25vh;
   grid-gap: 20px 20px;
 }
 
@@ -313,8 +313,8 @@ header .profil img {
   border: 1px solid black;
   border-radius: 10px;
   margin: 5px;
-  -ms-grid-rows: 25% 20% 40%;
-      grid-template-rows: 25% 20% 40%;
+  -ms-grid-rows: 15% 30% 40%;
+      grid-template-rows: 15% 30% 40%;
 }
 
 .grid-container .container-item img {
@@ -348,10 +348,26 @@ header .profil img {
 }
 
 .grid-container .container-item .btn-k {
+  background-color: chocolate;
+  border: 2px dashed royalblue;
   position: absolute;
   bottom: 0;
+  left: 50%;
+  width: 10rem;
+  transform: translate(-50%);
   border-radius: 10px;
-  height: 2em;
+  height: 2rem;
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.grid-container .container-item .btn-k:hover {
+  background: royalblue;
+  color: white;
 }
 
 .search-area input[type="text"],
