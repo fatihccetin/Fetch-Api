@@ -329,10 +329,12 @@ header .profil img {
   font-weight: bold;
   overflow: hidden;
   text-transform: uppercase;
+  color: black;
 }
 
 .grid-container .container-item .data {
   text-align: center;
+  color: black;
   overflow: hidden;
   text-overflow: ellipsis;
 }

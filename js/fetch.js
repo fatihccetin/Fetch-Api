@@ -6,14 +6,14 @@ fetch("https://jsonplaceholder.typicode.com/posts").then(
 ).then(
     responseJson => {
         
-        let gridElem = ""; 
+        let griditem = ""; 
         for (let i = 0; i < responseJson.length; i++) {
             if (i === 6) { //ilk altı tanesini aldık 
                 break;
             }
             else {
                
-                gridElem += `
+                griditem += `
                         <div class="container-item">
                         <img src="img/ciceksepeti.jpg" alt="item${responseJson[i].id}">
                         <p class="title">${responseJson[i].title}</p>
@@ -26,4 +26,15 @@ fetch("https://jsonplaceholder.typicode.com/posts").then(
         }
         
     }
-).catch(err => console.log("Hata: ", err));
+).catch(err => console.log("Hata var hata .d: ", err));
+
+// search bar filter 
+
+$(document).ready(function () {
+    $("#search-data").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+        $(".grid-container").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+        });
+    });
+});
