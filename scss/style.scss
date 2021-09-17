@@ -290,7 +290,7 @@ header {
 }
 
 .search-area {
-    input[type="search"],
+    input[type="text"],
     button[type="submit"] {
         border: none;
         //background-color: transparent;
@@ -302,7 +302,7 @@ header {
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
 }
-    input[type="search"] {
+    input[type="text"] {
         border-bottom: 1px solid $red-color;
         padding: 0.5rem;
     }

@@ -348,7 +348,7 @@ header .profil img {
   height: 2em;
 }
 
-.search-area input[type="search"],
+.search-area input[type="text"],
 .search-area button[type="submit"] {
   border: none;
   color: #beb8b8;
@@ -359,7 +359,7 @@ header .profil img {
   -o-border-radius: 5px;
 }
 
-.search-area input[type="search"] {
+.search-area input[type="text"] {
   border-bottom: 1px solid #E51515;
   padding: 0.5rem;
 }
