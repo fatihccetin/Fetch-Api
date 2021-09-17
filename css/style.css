@@ -323,7 +323,11 @@ header .profil img {
   width: 5rem;
 }
 
-.grid-container .container-item .title {
+.grid-container .container-item div {
+  position: relative;
+}
+
+.grid-container .container-item div .title {
   padding: 1em 1em;
   text-align: center;
   font-weight: bold;
@@ -332,18 +336,20 @@ header .profil img {
   color: black;
 }
 
-.grid-container .container-item .data {
+.grid-container .container-item div .data {
   text-align: center;
   color: black;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.grid-container .container-item .data::first-letter {
+.grid-container .container-item div .data::first-letter {
   text-transform: uppercase;
 }
 
 .grid-container .container-item .btn-k {
+  position: absolute;
+  bottom: 0;
   border-radius: 10px;
   height: 2em;
 }
