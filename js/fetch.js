@@ -1,3 +1,9 @@
+
+
+
+
+
+
 fetch("https://jsonplaceholder.typicode.com/posts").then(
     response => {
        
@@ -6,14 +12,14 @@ fetch("https://jsonplaceholder.typicode.com/posts").then(
 ).then(
     responseJson => {
         
-        let griditem = ""; 
+        let Item = ""; 
         for (let i = 0; i < responseJson.length; i++) {
             if (i === 6) { //ilk altı tanesini aldık 
                 break;
             }
             else {
                
-                griditem += `
+                Item += `
                         <div class="container-item">
                         <img src="img/ciceksepeti.jpg" alt="item${responseJson[i].id}">
                         <p class="title">${responseJson[i].title}</p>
@@ -22,7 +28,7 @@ fetch("https://jsonplaceholder.typicode.com/posts").then(
                         </div>
                         `;
             }
-            document.getElementById("grid-contents").innerHTML = gridElem;
+            document.getElementById("grid-contents").innerHTML = Item;
         }
         
     }
@@ -30,11 +36,3 @@ fetch("https://jsonplaceholder.typicode.com/posts").then(
 
 // search bar filter 
 
-$(document).ready(function () {
-    $("#search-data").on("keyup", function () {
-        var value = $(this).val().toLowerCase();
-        $(".grid-container").filter(function () {
-            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
-        });
-    });
-});
